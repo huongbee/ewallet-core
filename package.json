@@ -5,10 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./"
+    "start": "nodemon ./",
+    "deploy": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huongbee/ewallet-core.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Huong",
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^20.0.3",
@@ -39,6 +44,6 @@
     "shortid": "^2.2.15"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@huongntn"
+    "registry": "https://npm.pkg.github.com/huongbee"
   }
 }
