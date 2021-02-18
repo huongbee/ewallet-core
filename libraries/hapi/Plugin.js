@@ -1,6 +1,3 @@
-const Filehound = require('filehound');
-const Path = require('path');
-const Fs = require('fs');
 const _ = require('lodash');
 const Utility = require('../Utility');
 

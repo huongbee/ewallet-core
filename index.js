@@ -64,3 +64,6 @@ module.exports.getInstance = (instanceName) => {
 module.exports.Mongoose = {
 	Schema: Mongoose.Schema
 };
+
+
+module.exports.Joi = require('@hapi/joi');
