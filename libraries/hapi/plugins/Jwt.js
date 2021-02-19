@@ -18,7 +18,6 @@ module.exports = {
       ]);
       const error = [];
       _.forEach(jwtOptions.inject, (authName) => {
-        console.log({ authName })
         const auth = Utility.RequireWithCheckExist(`${projectDir}/hapi/auth/${authName}Auth.js`);
         if (auth === false) {
           error.push(`[${authName}] - Find not found`);
