@@ -20,8 +20,8 @@ module.exports = {
         return false;
       }
       hapi.server = Hapi.server(config.server);
-      await Route.Apply(instanceName, projectDir);
       await Plugin.Apply(instanceName, projectDir);
+      await Route.Apply(instanceName, projectDir);
       console.log(`[${instanceName}] - Hapi Server running on ${hapi.server.info.uri}`);
 
       await hapi.server.start();
